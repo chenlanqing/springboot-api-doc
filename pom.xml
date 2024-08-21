@@ -9,8 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>boot2-swagger2</module>
+        <module>boot2-springfox-starter</module>
         <module>common</module>
+        <module>boot2-springfox</module>
     </modules>
 
     <properties>
