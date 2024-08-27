@@ -1,0 +1,69 @@
+
+[[_definitions]]
+== 定义
+
+[[_55f888d09e87b4b7f708b880913f048e]]
+=== Result«List«用户实体»»
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|名称|类型
+|**code** +
+__可选__|integer (int32)
+|**data** +
+__可选__|< <<_e0e14a34025d14efed947f52b6e65068,用户实体>> > array
+|**msg** +
+__可选__|string
+|===
+
+
+[[_8dab822d4ee172dc3628f24a195da11e]]
+=== Result«用户实体»
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|名称|类型
+|**code** +
+__可选__|integer (int32)
+|**data** +
+__可选__|<<_e0e14a34025d14efed947f52b6e65068,用户实体>>
+|**msg** +
+__可选__|string
+|===
+
+
+[[_userlistquery]]
+=== UserListQuery
+
+[options="header", cols=".^3a,.^11a,.^4a"]
+|===
+|名称|说明|类型
+|**email** +
+__可选__|邮箱地址，精确搜索|string
+|**id** +
+__可选__|id|integer (int64)
+|**username** +
+__可选__|用户名，模糊搜索|string
+|===
+
+
+[[_e0e14a34025d14efed947f52b6e65068]]
+=== 用户实体
+
+[options="header", cols=".^3a,.^11a,.^4a"]
+|===
+|名称|说明|类型
+|**email** +
+__可选__|邮箱|string
+|**id** +
+__可选__|id|integer (int64)
+|**nationCode** +
+__可选__|国家码|string
+|**phone** +
+__可选__|手机号码|string
+|**username** +
+__可选__|用户名|string
+|===
+
+
+

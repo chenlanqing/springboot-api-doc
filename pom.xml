@@ -11,6 +11,7 @@
     <modules>
         <module>boot2-springfox-starter</module>
         <module>common</module>
+        <module>swagger-document</module>
     </modules>
 
     <properties>
