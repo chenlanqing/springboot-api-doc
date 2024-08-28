@@ -1,0 +1,4 @@
+include::asciidoc/generated/overview.adoc[]
+include::asciidoc/generated/paths.adoc[]
+include::asciidoc/generated/security.adoc[]
+include::asciidoc/generated/definitions.adoc[]
