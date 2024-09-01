@@ -20,19 +20,16 @@ public class Swagger2Document {
 
     public static void main(String[] args) throws Exception {
         // 用于转换的swagger.json可以来自于本地文件，也可以来http 获取
-        // Path localSwaggerFile = Paths.get("/path/to/swagger.json");
         URL remoteSwaggerFile = new URL("http://localhost:8080/v2/api-docs");
 
         // asciidoc 输出文件夹
         Path outputDir = Paths.get("./doc/asciidoc/generated");
 
         // 转换配置设置
-        // 配置书写方式有多种，可参考 Swagger2MarkupConfigBuilder 构造函数
-        // 此处可配置输出格式为 markdown 文档
         Swagger2MarkupConfig config = new Swagger2MarkupConfigBuilder()
-                .withMarkupLanguage(MarkupLanguage.ASCIIDOC)
-                .withOutputLanguage(Language.ZH)
-                .withPathsGroupedBy(GroupBy.TAGS)
+                .withMarkupLanguage(MarkupLanguage.ASCIIDOC) // ASCIIDOC
+                .withOutputLanguage(Language.ZH) // 中文
+                .withPathsGroupedBy(GroupBy.TAGS) // 分组标识
                 .build();
 
         Swagger2MarkupConverter.from(remoteSwaggerFile)
