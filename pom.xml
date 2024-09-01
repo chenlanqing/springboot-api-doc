@@ -12,6 +12,7 @@
         <module>boot2-springfox-starter</module>
         <module>common</module>
         <module>swagger-document</module>
+        <module>boot2-springfox-kinfe4j</module>
     </modules>
 
     <properties>
